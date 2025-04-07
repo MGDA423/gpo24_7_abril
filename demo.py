@@ -3,7 +3,10 @@ class cuadrado:
         self.lado = lado
 
     def area(self):
-         self.lado * self.lado
+          return self.lado ** 2
 
-NumLado = cuadrado (5)
-print("El resultado es:",NumLado.lado)
+##############################################
+lado = int(input("ingresa el lado?"))
+mi_ejemplo = cuadrado(lado)
+r = mi_ejemplo.area()
+print(f"el area es{r}")
